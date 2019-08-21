@@ -5,6 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
+		"prebuild": "ti sdk install",		
 		"build": "npm run build:ios",
 		"build:ios": "ti build -p ios --build-only --log-level trace --ios-version 12.2",
 		"build:android": "ti build -p android --build-only --log-level trace"
